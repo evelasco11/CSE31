@@ -29,7 +29,17 @@ void printArr(int *a, int size, char *prompt){
  * type. 
  */
 void arrCopy(){
-	// Your code here
+    // Implemented by ChatGPT to help with properly copying even and odd numbers into their respective Arrays.
+    int evenIndex = 0, oddIndex = 0;
+	for (int i = 0; i < size; i++){
+        if (*(arr + i) % 2 == 0){
+            *(arr_even + evenIndex) =  *(arr + i); 
+            evenIndex++;
+        } else {
+            *(arr_odd + oddIndex) = *(arr + i);
+            oddIndex++;
+        }
+    }
 }
 
 int main(){
@@ -50,8 +60,9 @@ int main(){
             oddCount++;
         }
     }
-    printf("Oddcount is %d\n", oddCount);
-    printf("Evencount is %d\n", evenCount);
+    printf("\n");
+    //printf("Oddcount is %d\n", oddCount);
+    //printf("Evencount is %d\n", evenCount);
 
     // Dynamically allocate memory for arr_even and arr_odd (of appropriate size)
     arr_even = (int *)malloc(evenCount*sizeof(int));
