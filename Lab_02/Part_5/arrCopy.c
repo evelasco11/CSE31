@@ -34,10 +34,20 @@ int main(){
     scanf("%d", &size);
 
     // Dynamically allocate memory for arr (of appropriate size)
-    // Your code here
+    arr = (int *)malloc(size*sizeof(int));
 
     // Ask user to input content of arr and compute evenCount and oddCount
-	// Your code here
+	for (i = 0; i < size; i++){
+        printf("Enter array element #%d: ", i+1);
+        scanf("%d", (arr+i));
+        if (*(arr+i) % 2 == 0){
+            evenCount++;
+        } else {
+            oddCount++;
+        }
+    }
+    printf("Oddcount is %d\n", oddCount);
+    printf("Evencount is %d\n", evenCount);
 
     // Dynamically allocate memory for arr_even and arr_odd (of appropriate size)
     // Your code here    

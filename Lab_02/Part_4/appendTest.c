@@ -33,11 +33,11 @@ int main() {
     char str2[10];
     while (1) {
         printf("str1 = ");
-        fgets(str1, sizeof(str1), stdin); 
+        fgets(str1, sizeof(str1), stdin); // Gets a whole line of strings entered in terminal.
         str1[strcspn(str1, "\n")] = 0; // Deletes new line character
         // if (!gets(str1)) return 0;
         printf("str2 = ");
-        fgets(str2, sizeof(str2), stdin);
+        fgets(str2, sizeof(str2), stdin); // Gets a whole line of strings entered in terminal.
         str2[strcspn(str2, "\n")] = 0; // Deletes new line character
         // if (!gets(str2)) return 0;
 
