@@ -16,7 +16,11 @@ char *str3 = "Contents of new array containing odd elements from original: ";
  * type. 
  */
 void printArr(int *a, int size, char *prompt){
-	// Your code here
+	printf("%s", prompt);
+    for (int i = 0; i < size; i++){
+        printf("%d ", *(a+i));
+    }
+    printf("\n");
 }
 
 /* 
@@ -50,7 +54,8 @@ int main(){
     printf("Evencount is %d\n", evenCount);
 
     // Dynamically allocate memory for arr_even and arr_odd (of appropriate size)
-    // Your code here    
+    arr_even = (int *)malloc(evenCount*sizeof(int));
+    arr_odd = (int *)malloc(oddCount*sizeof(int));    
 	
 /*************** YOU MUST NOT MAKE CHANGES BEYOND THIS LINE! ***********/
 	
