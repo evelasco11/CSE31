@@ -1,0 +1,46 @@
+TPS 01
+
+Emmanuel Velasco
+Diego Diaz
+Sanusi Signateh
+
+-Results have been bookmarked
+-Updated Msys64
+-Installed a gcc compiler
+-Installed a GDB
+-Set environmental path of msys64
+-I have discussed with my partners
+
+
+TPS 02
+
+1. To compile the program so that I can debug it using GDB, you use the flag -g when compiling, and then -o.
+"-g" flag is used for debugging.
+Example: gcc -g punishment.c -o punish.
+2. You load the executable file into gdp by typing gdb (filename).
+Example: gdb punish
+3. To run the executable program in gdb, we use the code, run.
+4. A breakpoint is a debugging tool that tells the debugger to pause execution of a program at a speicific line. This allows to inspect variable values.
+My breakpoint line for my for loop is at line 27.
+5. You run the program line by line by typing in next in gdb.
+Typing next 3 times, returned its position to the for loop again. Line 27
+6. You can display variable values by typing in print (variable_name).
+Ex. i is zero, typoNumber = 2, count = 3.
+7. You let the program finish its run by typing in continue, or c.
+8. You exit GDB by typing in quit, or q. Or if you are in a progrom, type in kill before quitting.
+
+
+TPS 03
+
+1. In the first line of main(), 4 variables are declared. 2 of them are pointers, *px and *py.
+2. When I print out the values of my variables, x = 0, y = 0, and arr[10] = 0. Since these variables aren't initialized, they are just zero.
+3. To prevent the variables from having unexpected values, you have to initialize the variables.
+For example, I did x = 1, y = 2, and arr[0] = 10.
+4. I use printf %p and &x, &y to print out the memory addresses of the variables.
+5. I printed out the value of the pointers and its memory addresses.
+6. We set a *ptr equal to array and print out *(ptr + i) to print out contents of arr.
+7. It is true that printing out arr as a pointer will print out the first element of the array, as arr[0].
+8. The memory addresses are the exact same. This makes sense as printing out both arr and arr[0] will print out the first element, and print out the same memory addresses.
+
+
+

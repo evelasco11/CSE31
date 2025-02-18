@@ -1,0 +1,37 @@
+TPS 1
+
+Groupmate Names:
+
+Emmanuel Velasco
+Diego Diaz
+Sanusi Signateh
+Ayoub El - Saddiq
+
+TPS 2
+
+1. You can open a terminal from Linux by either using Ubuntu, VScode, powershell, command prompt, etc. ctrl + alt + T to open quickly, or wnds + x and click terminal.
+    a. You can open multiple terminals at the same time.
+    b. You can open multiple terminals when you need to run several independent commands.
+2. You can use the command "ls" to view any directories/files within a directory.
+3. You use two commands. The "dir" command lists all the directories and folders, along with current directories. From here you can find where the Desktop directory is at and use commands "cd ." to go back directory or "cd /name/" to access further directories.
+4. You can create a new directory called CSE31 in Desktop by using the command "mkdir CSE31"
+
+TPS 3
+
+1. Yes
+2. Yes
+3. You type the command "gcc main.c -o main" to compile the code into an executable.
+4. Once the main is compile, use the command "ls" and make sure the executable is there in the directory, as "main" in this case.
+5. The "-c" in gcc tells the compiler to compile the program into an object file, a ".o" file, without linking them into an executable. Once a program is compiled using "-c", it generates main.o, but it is not linked into an executable.
+6. The command "-g" flag symbol in gcc includes debugging symbols in the compiled executables, and allows for debugging in the source code.
+7. You use the command "-o"  flag when compiling changes the executable name from main to cselab1. gcc main.c -o cselab1.
+8. When you compile using gcc main.c, compiles into a .exe file or .out file.
+9. You use "./main" to run the program that has been compiled. 
+
+TPS 4
+
+We discussed and attached the pseudoAverages code text file.
+
+
+
+

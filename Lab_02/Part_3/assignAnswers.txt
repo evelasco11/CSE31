@@ -1,0 +1,13 @@
+Assignment 1
+
+1.  I believe line 25 causes a segmentation fault because the scanf should be using the dereference of input.
+2. To fix the line, we put in &input instead of input so that it is scanned properly.
+3. The bug is that sum is not being updated. It remains at 0 no matter how many points I put.
+4. To fix the errors, the parameter of read_values, sum, should be a pointer. All the sum variables should be a pointer. The read_values on line 33 should have parameter &sum to dereference the pointer.
+
+Assignment 2
+
+1. The output is not expected, the second string prints out incorrectly. "HELLO!hello!llo!".
+2. The output is not expected, it seems that the bug is that it is printing out 10 characters for seconds string no matter the input of the first string. To fix the problem, I added where the rest of the elements greater than the two strings combined is null. Also deletes new line characters at the end of the strings.
+3. Output is not expected. If first string is over 10 character limit, it terminates itself to the next program/line of code.
+
