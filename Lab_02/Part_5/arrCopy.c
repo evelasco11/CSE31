@@ -33,7 +33,7 @@ void printArr(int *a, int size, char *prompt){
  * type. 
  */
 void arrCopy(){
-    int evenCount = 0, oddCount = 0;
+    evenCount = 0, oddCount = 0;
 	for (int i = 0; i < size; i++){
         if (*(arr + i) % 2 == 0){
             *(arr_even + evenCount) =  *(arr + i); 
