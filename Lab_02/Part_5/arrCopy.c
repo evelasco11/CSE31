@@ -17,8 +17,12 @@ char *str3 = "Contents of new array containing odd elements from original: ";
  */
 void printArr(int *a, int size, char *prompt){
 	printf("%s", prompt);
-    for (int i = 0; i < size; i++){
-        printf("%d ", *(a+i));
+    if (size == 0){
+        printf("empty");
+    } else {
+        for (int i = 0; i < size; i++){
+            printf("%d ", *(a+i));
+        }
     }
     printf("\n");
 }
