@@ -33,15 +33,14 @@ void printArr(int *a, int size, char *prompt){
  * type. 
  */
 void arrCopy(){
-    // Implemented by ChatGPT to help with properly copying even and odd numbers into their respective Arrays.
-    int evenIndex = 0, oddIndex = 0;
+    int evenCount = 0, oddCount = 0;
 	for (int i = 0; i < size; i++){
         if (*(arr + i) % 2 == 0){
-            *(arr_even + evenIndex) =  *(arr + i); 
-            evenIndex++;
+            *(arr_even + evenCount) =  *(arr + i); 
+            evenCount++;
         } else {
-            *(arr_odd + oddIndex) = *(arr + i);
-            oddIndex++;
+            *(arr_odd + oddCount) = *(arr + i);
+            oddCount++;
         }
     }
 }
