@@ -1,0 +1,7 @@
+TPS 1
+
+Emmanuel Velasco
+Diego Diaz
+Sanusi Signateh
+
+1. the 3 pools of memory is stack, head, and static memory. Static memory stores the global variables. Stack stores local variables within function. Heap stores pointers, used for dynamic memory allocation.
