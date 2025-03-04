@@ -5,3 +5,16 @@ Diego Diaz
 Sanusi Signateh
 
 1. the 3 pools of memory is stack, head, and static memory. Static memory stores the global variables. Stack stores local variables within function. Heap stores pointers, used for dynamic memory allocation.
+2a. 3 variables are declared, num, *ptr, **handle.
+2b. Two of them are pointers. (*ptr and **handle). *Ptr points to an integer and **handle points to a pointer that points to an integer.
+2c. Num is stored in the stack, while *ptr and **handle are stored on the heap.
+2d. Pointer ptr points to memory stored in the stack.
+3. Pools of memory are drawn on paper
+4. Arrows have been added to connect pointer to its destination.
+
+TPS 2
+
+1.  Uses variables from struct to find the Node, which is *next. Establishing a linkedlist, where the head is pointing to the node, then the node is pointing to next. Two different nodes are created for iValue and fValue.
+2. Extra code has been added.
+3. The function Node is stored in the stack, and the value is stored on the heap. The pointer head is just pointing to the address of the struct. The next pointer is what is used to create a new link in a linkedlist while pointing to a new node struct.
+The head pointer uses the node struct to create its next destination.
