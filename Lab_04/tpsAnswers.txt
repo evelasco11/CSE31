@@ -3,3 +3,27 @@ TPS 1:
 Emmanuel Velasco
 Sanusi Signateh
 Diego Diaz
+
+1. It is expected to print out the hex value of the values of the array in hexademcimal.
+2. I would expect the program to print out the same values or receive a compiling warning/error.
+3. The hexadecimal is printed out instead of the value of four_ints[0], which was previously 2.
+4. The second printout is 2. I am somewhat surprised by the results as I know that initializing four_c = (char*)four_ints; points to the first of the array, which is four_ints[0].
+5.  a. One array was allocated at the beginning. int four_ints[4].
+    b. four_ints and four_c point partially to the same thing. four_c points to the first index of the array.
+    c. four_ints and four_c have the same memory address, verified by the print out.
+6. The addresses increment by 4 bytes because that is the size capacity of an int data type.
+7. Drew on notebook
+8. The differences in addresses between two elements is one byte. This is the result because the character data type has a size of 1 byte.
+9. Drew on notebook. 
+10. Even though both pointers point to the same memory address, depending on the size of the data type, the memory increments by the size of that data type. 
+    Example: int data type would increment by 4 bytes. Character data type would increment by 1 byte.
+
+TPS 2:
+
+1. Line 8 allocates memory of a double pointer to create a 2d array.
+2. We access the ith value of an array, we use two loops to cycle through each index of the array that the array double pointer points to.
+3. You access the index of a "matrix" by using *(*(arr + i) + j).
+4. We need to pass the size of the array as an argument to allocate the proper memory to create a matrix of the size n * n.
+5. printArray prints arrays out properly.
+6. Added program to insert diagonal matrix that is instructed.
+7. printArray is called again. Result verified.
